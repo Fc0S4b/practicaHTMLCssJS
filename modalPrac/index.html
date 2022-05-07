@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>práctica de modal</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <section class="gallery">
+    <div class="gallery-center">
+      <img src="./imagenes/ameraucana.jpg" data-id="1" title="Ameraucana" alt="" class="img">
+      <img src="./imagenes/ayamCernani.jpg" data-id="2" title="ayam Cernani" alt="" class="img">
+      <img src="./imagenes/Gallina-Polaca.jpg" data-id="3" title="Gallina Polaca" alt="" class="img">
+      <img src="./imagenes/Leghorn.jpg" data-id="4" title="Leghorn" alt="" class="img">
+      <img src="./imagenes/LohmannBrown.png" data-id="5" title="Lohmann Brown" alt="" class="img">
+      <img src="./imagenes/marans.jpg" data-id="6" title="Marans" alt="" class="img">
+      <img src="./imagenes/Orpington.png" data-id="7" title="Orpington" alt="" class="img">
+      <img src="./imagenes/PlymouthRock.jpg" data-id="8" title="Plymouth Rock" alt="" class="img">
+      <img src="./imagenes/rhodeIslandColorada.jpg" data-id="9" title="Rhode Island colorada" alt="" class="img">
+      <img src="./imagenes/sedosaJapon.jpg" data-id="10" title="Sedosa Japonesa" alt="" class="img">
+      <img src="./imagenes/sussex.jpg" data-id="11" title="Gallina sussex" alt="" class="img">
+      <img src="./imagenes/Brahma.jpg" data-id="12" title="Brahma" alt="" class="img">
+    </div>
+  </section>
+
+  <div class="modal">
+
+    <button class="closeBtn">
+      <i class="fas fa-times"></i>
+    </button>
+    <div class="modal-content">
+
+
+      <button class="prevBtn">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+
+      <button class="nextBtn">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+
+      <img src="./imagenes/Brahma.jpg" class="main-img" title="img-12" alt="">
+      <h4 class="image-name">img-title</h4>
+
+      <div class="modal-images">
+        <img src="./imagenes/sussex.jpg" class="modal-img" id="11" title="img-11" alt="">
+        <img src="./imagenes/Brahma.jpg" class="modal-img selected" id="12" title="img-12" alt="">
+      </div>
+    </div>
+  </div>
+
+  <script src="./app.js"></script>
+
+</body>
+
+</html>
